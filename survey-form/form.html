@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Survey form</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="title">first music lessons feedback survey form</h1>
+            <p>Please, let us know what a little bit about your experience with the course</p>
+        </header>
+        <main>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="email-label" for="name">name: <input id="name" type="text" placeholder="Your name here">
+                    </label>
+                    <br>
+                    <label id="email-label" for="email">email: <input id="email" type="text" placeholder="email here">
+                    </label>
+                    <br>
+                    <label id="number-label" for="number">How long did you take to finish the course? <input id="number" type="number" min="1" max="12" placeholder="months"></label>
+                </div>
+                <div class="form-group">
+                    <p>Who was your teacher?</p>
+                    <select name="teacher" id="dropdown">
+                        <option disabled selected value>Select your teacher</option>
+                        <option value="mark">Mark</option>
+                        <option value="mariah">Mariah</option>
+                        <option value="john">John</option>
+                        <option value="zion">Zion</option>
+                        <option value="darlene">Darlene</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p name="instrument">What instrument did you learn?</p>
+                    <label for="acoustic">Acoustic guitar
+                        <input id="acoustic" value="acoustic guitar" type="radio" name="instrument">
+                    </label>
+                    <br>
+                    <label for="electric">Electric guitar
+                        <input id="electric" value="electric guitar" type="radio" name="instrument">
+                    </label>
+                    <br>
+                    <label for="keyboard">Keyboard
+                        <input id="keyboard" value="keyboard" type="radio" name="instrument">
+                    </label>
+                    <br>
+                    <label for="drums">Drums
+                        <input id="drums" value="drums" type="radio" name="instrument">
+                    </label>
+                    <br>
+                    <label for="bass">Bass
+                        <input id="bass" value="bass" type="radio" name="instrument">
+                    </label>
+                </div>
+                <br>
+                <div class="form-group">
+                    <p>What were your favourite lessons?</p>
+                <label for="theory">Introduction to music theory
+                    <input id="theory" value="theory" type="checkbox" name="lessons">
+                </label>
+                <br>
+                <label for="notes">Notes on the instrument
+                    <input id="notes" value="notes" type="checkbox" name="lessons">
+                </label>
+                <br>
+                <label for="scales">Major and minor scales
+                    <input id="scales" type="checkbox" value="scales" name="lessons">
+                </label>
+                <br>
+                <label for="chords">How to form chords
+                    <input id="chords" value="chords"  type="checkbox" name="lessons">
+                </label>
+                <br>
+                <label for="metronome">playing on the right tempo with metronome
+                    <input id="metronome" value="metronome" type="checkbox" name="lessons">
+                </label>
+                <br>
+                <label for="practice">Tips on how to practice more effeciently
+                    <input id="practice" value="practice" type="checkbox" name="lessons">
+                </label>
+                </div>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="textarea">Tell was a lit bit about your experience with the course. What was the most challenging lesson for you? 
+                        <br>
+                        <input id="textarea-label" type="textarea" placeholder="" required>
+                    </label>
+                    <br>
+                    <input type="submit">
+                </div>
+            </form>
+
+        </main>
+        <footer></footer> 
+    </body>
+</html>
