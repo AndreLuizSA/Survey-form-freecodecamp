@@ -1,21 +1,170 @@
-body {
+* {
     margin: 0px;
     padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
     background-image: url(https://wallpaperaccess.com/full/2502659.jpg);
+    color: rgba(255, 255, 255, 1);
+    background-image: linear-gradient(130deg, rgb(87, 207, 177), rgb(5, 57, 73));
+    text-align: center;
 }
 header {
     text-align: center;
     font-family: 'Outfit', sans-serif;
     padding: 50px 0px 50px 0px;
 }
-#survey-form {
-    background-color: rgba(15, 62, 94, 0.3);
-    border-radius: 2%;
-    padding: 50px 50px 50px 50px;
-    margin: 0px 300px 0px 300px;
+header #title {
+    font-size: 40px;
 }
-@media screen {
-    #survy-form {
+header p {
+    padding-top: 10px;
+    font-size: 20px;
+}
+main {
+    align-content: center;
+}
+#survey-form {
+    background-color: rgba(10, 28, 41, 0.4);
+    border-radius: 3%;
+    margin: 0rem 20rem 0rem 20rem;
+    padding: 4rem 5rem 4rem 5rem;
+}
+.form-group {
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#list-instruments {
+    display: inline-flex;
+    padding: 0px 0px 25px 0px;
+    margin: 0px 0px 25px 0px;
+}
+#name-label {
+    font-style: italic;
+}
+#list-title {
+    font-weight: bolder;
+    font-size: 30px;
+}
+#list-instruments .inst-options {
+    margin: 10px 10px;
+    padding: 0px 0px; 
+}
+.icons {
+    width: 4rem;
+}
+div #list-title {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.lessons {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+header {
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    padding: 50px 10px 50px 10px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 25px 0px;
+}
+.form-group #name-label {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+.form-group #name-label #name {
+    align-items: flex-start;
+    margin: 15px 0px 15px 0px;
 
+}
+#name {
+    font-size: 1.3rem;
+    width: 100%;
+    height: 2rem;
+}
+.form-group #email-label {
+    font-style: italic;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+.form-group #email-label #email {
+    margin: 15px 0px 15px 0px;
+
+}
+#email {
+    font-size: 1.3rem;
+    width: 100%;
+    height: 2rem;
+}
+.form-group #number-label {
+    font-style: italic;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+.form-group #number-label #number {
+    font-style: italic;
+    margin: 15px 0px 15px 0px;
+
+}
+#number {
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+    width: 100%;
+    height: 2rem;
+}
+#dropdown {
+    font-size: 1.5rem;
+    color: rgb(134, 134, 134);
+    margin: 0px 0px 20px;
+    width: 100%;
+}
+#dropdown option {
+    font-size: 1rem;
+    height: 25px;
+    width: 100%;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#text-label {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+textarea {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+#submit {
+    width: 100%;
+    height: 2rem;
+    background-image: linear-gradient(90deg, rgb(59, 136, 52), rgb(90, 184, 46));
+    color: white;
+    font-weight: bolder;
+    position: relative;
+    float: right;
+}
+@media (max-width: 1050px) {
+    main {
+        align-content: center;
     }
+    #survey-form {
+        background-color: rgba(10, 28, 41, 0.4);
+        border-radius: 1%;
+        margin: 0px;
+    }
+    textarea {
+        margin: 25px 0px;
+        width: 100%;
+    }
+ 
+   
 }
